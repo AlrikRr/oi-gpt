@@ -1,0 +1,2 @@
+openai
+#win32clipboard (for Windows only)
