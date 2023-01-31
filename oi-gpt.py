@@ -15,10 +15,17 @@ elif sys.platform == "darwin":
             "pbcopy", env={"LANG": "en_US.UTF-8"}, stdin=subprocess.PIPE
         )
         process.communicate(text.encode("utf-8"))
+elif sys.platform.startswith("linux"):
+    import subprocess
+    def to_clipboard(text):
+        process = subprocess.Popen(
+            "xsel --clipboard --input", shell=True, stdin=subprocess.PIPE
+        )
+        process.communicate(text.encode("utf-8"))
 else:
     raise Exception("Unsupported platform")
 
-openai.api_key = "YOUR-API-KEY"
+openai.api_key = "YOUR_API_KEY"
 
 def generate_response(prompt):
     completions = openai.Completion.create(
