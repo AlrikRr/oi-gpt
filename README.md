@@ -13,6 +13,7 @@ This Python script uses the OpenAI API to generate responses to questions using 
 - OpenAI API key
 - The `openai` library: `pip install openai`
 - Clipboard library for your operating system: `win32clipboard` for Windows, `subprocess` for macOS and Linux
+- Install `xsel` for Linux system
 
 ## Usage
 
