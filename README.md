@@ -1,4 +1,5 @@
-# Oi, GPT ! 
+# オイ, GPT ! 
+![Oi GPT](assets/oi-gpt.png)
 
 This Python script uses the OpenAI API to generate responses to questions using CHATGPT. It supports three different modes of operation, specified by a single command-line argument:
 
